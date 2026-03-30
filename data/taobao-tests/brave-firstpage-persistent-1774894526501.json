@@ -1,0 +1,195 @@
+{
+  "keyword": "brave",
+  "searchUrl": "https://s.taobao.com/search?q=brave",
+  "startedAt": "2026-03-30T18:12:16.864Z",
+  "profile": "brave-default",
+  "targetBrowser": "brave",
+  "listingCountFound": 12,
+  "listingCountVisited": 12,
+  "captchaOrBlockDetected": false,
+  "loginStateLikely": "logged-in",
+  "listings": [
+    {
+      "url": "https://detail.tmall.com/item.htm?id=990894933632&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000jx9aT0zdcNoRKe7gDSFtSnMm89hxa96j6T5QhH7LLu0&skuId=6033530709796&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%22eb6241f95e5cc76b8e89a8ff17855c65%22%7D&spm=a21n57.1.item.2",
+      "title": "brave api搜索key自动发货绑卡激活search api网页搜索api key-tmall.com天猫",
+      "rawPriceTexts": [
+        "￥5"
+      ],
+      "priceNumbers": [
+        5
+      ],
+      "minPrice": 5,
+      "maxPrice": 5,
+      "planHints": [],
+      "blocked": false
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=904546931762&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000boJRYSk1ho9ZMqRbDJDIee0LM4IgA0pDuvchf9A3QNs&skuId=5932428367289&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%223de2910377ad434220010272d907b2bc%22%7D&spm=a21n57.1.item.3",
+      "title": "brave api搜索key自动发货绑卡激活search api网页搜索api key-淘宝网",
+      "rawPriceTexts": [
+        "券后￥0.97优惠前￥1"
+      ],
+      "priceNumbers": [
+        0.97,
+        1
+      ],
+      "minPrice": 0.97,
+      "maxPrice": 1,
+      "planHints": [],
+      "blocked": false
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=959779694662&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000UPr_T_EmsJCXrCNUzWeUlhOPoWvDLsch3prdRjT_SyM&skuId=5891378129693&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%22d07571999bfd9dd107294fbef992a7e9%22%7D&spm=a21n57.1.item.4",
+      "title": "Tavily/Brave/Exa/FireCrawl APIkey 搜索爬虫api适配claudecode-淘宝网",
+      "rawPriceTexts": [
+        "券后￥5.23优惠前￥5.5"
+      ],
+      "priceNumbers": [
+        5.23,
+        5.5
+      ],
+      "minPrice": 5.23,
+      "maxPrice": 5.5,
+      "planHints": [],
+      "blocked": false
+    },
+    {
+      "url": "https://detail.tmall.com/item.htm?id=1019375808193&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000vY9BKNISHRX3jXbKbRtmt16yFtTOIxPdczUa92oX_iU&skuId=6194498595192&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%2282732e5fd1da095d89d7b9fba2203214%22%7D&spm=a21n57.1.item.5",
+      "title": "brave api搜索api key自动发货绑卡激活search api/Tavily api-tmall.com天猫",
+      "rawPriceTexts": [
+        "￥3.9"
+      ],
+      "priceNumbers": [
+        3.9
+      ],
+      "minPrice": 3.9,
+      "maxPrice": 3.9,
+      "planHints": [],
+      "blocked": false
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=1020628995577&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000NLdQIojU9KQJ_A4Q72Nqf0Z6dceiSYhe7dt52DLuH6Q&skuId=6197809526411&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%22d834044cc8e044c2b902793d6e29e480%22%7D&spm=a21n57.1.item.6",
+      "title": "brave api搜索key自动发货绑卡激活search api网页搜索api key-淘宝网",
+      "rawPriceTexts": [
+        "券后￥6.77优惠前￥6.9"
+      ],
+      "priceNumbers": [
+        6.77,
+        6.9
+      ],
+      "minPrice": 6.77,
+      "maxPrice": 6.9,
+      "planHints": [],
+      "blocked": false
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=1022166717047&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=00003vJXBfYr7Du__uEzirC5uF7Z3D_A0bF-YelXA0p70ho&skuId=6033421637178&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%22e0be9a35ebc61adfdebb0fdee44025f4%22%7D&spm=a21n57.1.item.7",
+      "title": "Brave Search API KEY验证卡虚拟卡订阅卡1美金卡可接码3DS验证-淘宝网",
+      "rawPriceTexts": [
+        "券后￥6.77优惠前￥6.9"
+      ],
+      "priceNumbers": [
+        6.77,
+        6.9
+      ],
+      "minPrice": 6.77,
+      "maxPrice": 6.9,
+      "planHints": [],
+      "blocked": false
+    },
+    {
+      "url": "https://detail.tmall.com/item.htm?id=1036137007268&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000ptpfNCxElkXluNrghuatOaZLODj1gXpi6CGH5jbdgbA&skuId=6053934784653&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%223d55752a57eec6d4333b5b17ae5799cd%22%7D&spm=a21n57.1.item.8",
+      "title": "brave api搜索key自动发货绑卡激活search api网页搜索api key-tmall.com天猫",
+      "rawPriceTexts": [
+        "￥5"
+      ],
+      "priceNumbers": [
+        5
+      ],
+      "minPrice": 5,
+      "maxPrice": 5,
+      "planHints": [],
+      "blocked": false
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=1020014119854&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=00005K0ect7eaY93L6Xp6JeVYXwuP_LCWlhzzT5eKtXpxA0&skuId=6198148211268&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%22ec52e5f1d620b2fab110c8e1c733178f%22%7D&spm=a21n57.1.item.9",
+      "title": "Brave Search API KEY验证卡虚拟卡订阅卡1美金卡可接码3DS验证-淘宝网",
+      "rawPriceTexts": [
+        "券后￥9.8优惠前￥10"
+      ],
+      "priceNumbers": [
+        9.8,
+        10
+      ],
+      "minPrice": 9.8,
+      "maxPrice": 10,
+      "planHints": [],
+      "blocked": false
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=841792805772&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000ix7BfVs_KJRaJNRacxJGkUCoA4wAY9TOemn4839cepg&skuId=null&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%224db12cc812c75aa46a51e40eaff02f88%22%7D&spm=a21n57.1.item.10",
+      "title": "Brave Conversion Engine弹窗注册自定义横幅 Wordpress营销插件-淘宝网",
+      "rawPriceTexts": [
+        "券后￥8.5优惠前￥9.99"
+      ],
+      "priceNumbers": [
+        8.5,
+        9.99
+      ],
+      "minPrice": 8.5,
+      "maxPrice": 9.99,
+      "planHints": [],
+      "blocked": false
+    },
+    {
+      "url": "https://detail.tmall.com/item.htm?id=1038141021105&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000yiTEBTHnCDIyFdB6k7hORNIjQ7K5lAokzKElATXIpAs&skuId=6054759672139&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%22b468a1926cba004a799c731250b5364d%22%7D&spm=a21n57.1.item.11",
+      "title": "brave api搜索key绑卡激活search api网页搜索api key-tmall.com天猫",
+      "rawPriceTexts": [
+        "￥5"
+      ],
+      "priceNumbers": [
+        5
+      ],
+      "minPrice": 5,
+      "maxPrice": 5,
+      "planHints": [],
+      "blocked": false
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=1028604163288&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000cu7nHMrPQJDV_uJZSi-bmYzLMeAB6VJs4hXvVPg5Giw&skuId=6041680912526&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%22ba803d8953e2381b60a373a6559b9879%22%7D&spm=a21n57.1.item.12",
+      "title": "进击的巨人 Brave Order 日服 签到 开局 六星 初始号 多石头号-淘宝网",
+      "rawPriceTexts": [
+        "￥12.5"
+      ],
+      "priceNumbers": [
+        12.5
+      ],
+      "minPrice": 12.5,
+      "maxPrice": 12.5,
+      "planHints": [],
+      "blocked": false
+    },
+    {
+      "url": "https://detail.tmall.com/item.htm?id=958984978275&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000-5ZnulAsWNuNVoxPPqrER7g5awLNj1EyWM2S4CA6IoY&skuId=5889532109712&priceTId=2101280917748943534204249e0d44&utparam=%7B%22aplus_abtest%22%3A%227a9bebe2f1476f7c4962d05e34a11f0b%22%7D&spm=a21n57.1.item.13",
+      "title": "RAY的模型世界Brave推刀刻线刀刻刀钨钢高达模型手办gk改造工具-tmall.com天猫",
+      "rawPriceTexts": [
+        "￥20"
+      ],
+      "priceNumbers": [
+        20
+      ],
+      "minPrice": 20,
+      "maxPrice": 20,
+      "planHints": [],
+      "blocked": false
+    }
+  ],
+  "comparison": {
+    "listingsWithPrices": 12,
+    "globalMinPrice": 0.97,
+    "globalMaxPrice": 20,
+    "blockedListings": 0
+  },
+  "notes": [],
+  "finishedAt": "2026-03-30T18:15:26.500Z"
+}

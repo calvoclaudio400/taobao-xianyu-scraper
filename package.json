@@ -1,0 +1,24 @@
+{
+  "name": "taobao-xianyu-scraper",
+  "version": "1.0.0",
+  "description": "Script-based browser scraper (Playwright) for Taobao/Xianyu testing and data extraction.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvoclaudio400/taobao-xianyu-scraper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/calvoclaudio400/taobao-xianyu-scraper/issues"
+  },
+  "homepage": "https://github.com/calvoclaudio400/taobao-xianyu-scraper#readme",
+  "dependencies": {
+    "playwright-core": "^1.58.2"
+  }
+}
