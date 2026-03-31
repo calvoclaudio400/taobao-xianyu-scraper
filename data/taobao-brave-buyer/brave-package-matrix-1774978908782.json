@@ -1,0 +1,137 @@
+{
+  "keyword": "brave",
+  "mode": "package-matrix",
+  "ts": "2026-03-31T17:39:54.366Z",
+  "listings": [
+    {
+      "url": "https://detail.tmall.com/item.htm?id=990894933632",
+      "title": "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+      "salesHints": [],
+      "basePriceTexts": [
+        "新品促销￥5起"
+      ],
+      "packageMatrix": [
+        {
+          "option": "中文(zh)",
+          "priceText": "新品促销￥5起",
+          "price": 5,
+          "count": null,
+          "duration": "unspecified",
+          "keys": null
+        },
+        {
+          "option": "英文(en)",
+          "priceText": "新品促销￥5起",
+          "price": 5,
+          "count": null,
+          "duration": "unspecified",
+          "keys": null
+        }
+      ]
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=904546931762",
+      "title": "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+      "salesHints": [],
+      "basePriceTexts": [
+        "券后￥0.97起优惠前￥1起"
+      ],
+      "packageMatrix": [
+        {
+          "option": "中文(zh)",
+          "priceText": "券后￥0.97起优惠前￥1起",
+          "price": 0.97,
+          "count": null,
+          "duration": "unspecified",
+          "keys": null
+        },
+        {
+          "option": "英文(en)",
+          "priceText": "券后￥0.97起优惠前￥1起",
+          "price": 0.97,
+          "count": null,
+          "duration": "unspecified",
+          "keys": null
+        }
+      ]
+    },
+    {
+      "url": "https://detail.tmall.com/item.htm?id=1019375808193",
+      "title": "brave api搜索api key自动发货绑卡激活search api/Tavily api",
+      "salesHints": [],
+      "basePriceTexts": [
+        "新品促销￥3.9起"
+      ],
+      "packageMatrix": [
+        {
+          "option": "中文(zh)",
+          "priceText": "新品促销￥3.9起",
+          "price": 3.9,
+          "count": null,
+          "duration": "unspecified",
+          "keys": null
+        },
+        {
+          "option": "英文(en)",
+          "priceText": "新品促销￥3.9起",
+          "price": 3.9,
+          "count": null,
+          "duration": "unspecified",
+          "keys": null
+        }
+      ]
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=1020628995577",
+      "title": "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+      "salesHints": [],
+      "basePriceTexts": [
+        "券后￥6.77起优惠前￥6.9起"
+      ],
+      "packageMatrix": [
+        {
+          "option": "中文(zh)",
+          "priceText": "券后￥6.77起优惠前￥6.9起",
+          "price": 6.77,
+          "count": null,
+          "duration": "unspecified",
+          "keys": null
+        },
+        {
+          "option": "英文(en)",
+          "priceText": "券后￥6.77起优惠前￥6.9起",
+          "price": 6.77,
+          "count": null,
+          "duration": "unspecified",
+          "keys": null
+        }
+      ]
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=959779694662",
+      "title": "Tavily/Brave/Exa/FireCrawl APIkey 搜索爬虫api适配claudecode",
+      "salesHints": [],
+      "basePriceTexts": [
+        "券后￥5.23起优惠前￥5.5起"
+      ],
+      "packageMatrix": [
+        {
+          "option": "中文(zh)",
+          "priceText": "券后￥5.23起优惠前￥5.5起",
+          "price": 5.23,
+          "count": null,
+          "duration": "unspecified",
+          "keys": null
+        },
+        {
+          "option": "英文(en)",
+          "priceText": "券后￥5.23起优惠前￥5.5起",
+          "price": 5.23,
+          "count": null,
+          "duration": "unspecified",
+          "keys": null
+        }
+      ]
+    }
+  ]
+}

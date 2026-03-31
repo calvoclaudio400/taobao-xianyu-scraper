@@ -1,0 +1,160 @@
+{
+  "keyword": "brave",
+  "mode": "unified-level2",
+  "ts": "2026-03-31T17:34:35.525Z",
+  "listings": [
+    {
+      "platform": "tmall",
+      "url": "https://detail.tmall.com/item.htm?id=990894933632",
+      "title": "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+      "blocked": false,
+      "salesHints": [],
+      "priceTexts": [
+        "新品促销￥5起"
+      ],
+      "priceNumbers": [
+        4,
+        5,
+        10,
+        1000,
+        2000,
+        22000
+      ],
+      "minPrice": 4,
+      "maxPrice": 22000,
+      "packageLines": [
+        "【Brave】Search API单月5刀额度1000次（自动发一个key） 【Brave】Search API单月10刀额度2000次（自动发两个key） 【Brave】answers API单月5刀额度（自动发一个key） 【Brave】Spellcheck API单月5刀额度（自动发一个key） 【Brave】Autosuggest API单月5刀额度（自动发一个key） 【上面4款】买二送二/综合22000次单月（超性价比） 代绑卡激活(绑你的号) 自定义额度充值 官方套餐定制（联系客服）",
+        "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+        "【Brave】Search API单月5刀额度1000次（自动发一个key）",
+        "【Brave】Search API单月10刀额度2000次（自动发两个key）",
+        "【Brave】answers API单月5刀额度（自动发一个key）",
+        "【Brave】Spellcheck API单月5刀额度（自动发一个key）",
+        "【Brave】Autosuggest API单月5刀额度（自动发一个key）"
+      ],
+      "zhEnPackageHint": []
+    },
+    {
+      "platform": "taobao",
+      "url": "https://item.taobao.com/item.htm?id=904546931762",
+      "title": "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+      "blocked": false,
+      "salesHints": [],
+      "priceTexts": [
+        "券后￥0.97起优惠前￥1起"
+      ],
+      "priceNumbers": [
+        0.97,
+        1,
+        2,
+        23,
+        2000,
+        2026,
+        4000
+      ],
+      "minPrice": 0.97,
+      "maxPrice": 4000,
+      "packageLines": [
+        "专业直连API店铺",
+        "2026-02-23已购：Brave API 免费版2000次单月(自动发一个key)",
+        "Brave API 免费版2000次单月(自动发一个key),Brave API 免费版4000次单月(自动发两个key),代绑卡激活(绑你的号),自定义额度充值",
+        "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+        "Brave API 免费版2000次单月(自动发一个key)",
+        "Brave API 免费版4000次单月(自动发两个key)"
+      ],
+      "zhEnPackageHint": []
+    },
+    {
+      "platform": "tmall",
+      "url": "https://detail.tmall.com/item.htm?id=1019375808193",
+      "title": "brave api搜索api key自动发货绑卡激活search api/Tavily api",
+      "blocked": false,
+      "salesHints": [],
+      "priceTexts": [
+        "新品促销￥3.9起"
+      ],
+      "priceNumbers": [
+        2,
+        3.9,
+        1000,
+        2000,
+        2026,
+        10000
+      ],
+      "minPrice": 2,
+      "maxPrice": 10000,
+      "packageLines": [
+        "2026-02-02已购：Brave API免费版2000次单月(自动发一个key)",
+        "brave api搜索api key自动发货绑卡激活search api/Tavily api",
+        "【brave】search api 1000次单月(自动发一个key)",
+        "【brave】searchapi 2000次单月(自动发一个key)",
+        "【brave】 Spellcheck 10000次单月(自动发一个key)",
+        "【brave】 Autosuggest 10000次单月(自动发一个key)",
+        "【定制】API调用次数(此项咨询客服再拍)"
+      ],
+      "zhEnPackageHint": []
+    }
+  ],
+  "recommendation": {
+    "cheapest": {
+      "platform": "taobao",
+      "url": "https://item.taobao.com/item.htm?id=904546931762",
+      "title": "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+      "blocked": false,
+      "salesHints": [],
+      "priceTexts": [
+        "券后￥0.97起优惠前￥1起"
+      ],
+      "priceNumbers": [
+        0.97,
+        1,
+        2,
+        23,
+        2000,
+        2026,
+        4000
+      ],
+      "minPrice": 0.97,
+      "maxPrice": 4000,
+      "packageLines": [
+        "专业直连API店铺",
+        "2026-02-23已购：Brave API 免费版2000次单月(自动发一个key)",
+        "Brave API 免费版2000次单月(自动发一个key),Brave API 免费版4000次单月(自动发两个key),代绑卡激活(绑你的号),自定义额度充值",
+        "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+        "Brave API 免费版2000次单月(自动发一个key)",
+        "Brave API 免费版4000次单月(自动发两个key)"
+      ],
+      "zhEnPackageHint": []
+    },
+    "trust": {
+      "platform": "tmall",
+      "url": "https://detail.tmall.com/item.htm?id=990894933632",
+      "title": "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+      "blocked": false,
+      "salesHints": [],
+      "priceTexts": [
+        "新品促销￥5起"
+      ],
+      "priceNumbers": [
+        4,
+        5,
+        10,
+        1000,
+        2000,
+        22000
+      ],
+      "minPrice": 4,
+      "maxPrice": 22000,
+      "packageLines": [
+        "【Brave】Search API单月5刀额度1000次（自动发一个key） 【Brave】Search API单月10刀额度2000次（自动发两个key） 【Brave】answers API单月5刀额度（自动发一个key） 【Brave】Spellcheck API单月5刀额度（自动发一个key） 【Brave】Autosuggest API单月5刀额度（自动发一个key） 【上面4款】买二送二/综合22000次单月（超性价比） 代绑卡激活(绑你的号) 自定义额度充值 官方套餐定制（联系客服）",
+        "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+        "【Brave】Search API单月5刀额度1000次（自动发一个key）",
+        "【Brave】Search API单月10刀额度2000次（自动发两个key）",
+        "【Brave】answers API单月5刀额度（自动发一个key）",
+        "【Brave】Spellcheck API单月5刀额度（自动发一个key）",
+        "【Brave】Autosuggest API单月5刀额度（自动发一个key）"
+      ],
+      "zhEnPackageHint": []
+    },
+    "note": "Cheapest typically best for testing; Tmall pick typically better for trust/dispute handling."
+  }
+}
