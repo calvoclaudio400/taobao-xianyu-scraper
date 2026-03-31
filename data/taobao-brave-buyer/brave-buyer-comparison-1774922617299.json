@@ -1,0 +1,25 @@
+{
+  "keyword": "brave",
+  "searchUrl": "https://s.taobao.com/search?q=brave",
+  "startedAt": "2026-03-31T02:02:49.297Z",
+  "profile": "brave-default (persistent, logged-in)",
+  "captchaOrBlock": false,
+  "loginState": "logged-in",
+  "searchPageItems": [],
+  "listings": [],
+  "comparison": {
+    "totalItemsFound": 0,
+    "totalVisited": 0,
+    "withPrices": 0,
+    "withVariants": 0,
+    "blockedCount": 0,
+    "globalMinPrice": null,
+    "globalMaxPrice": null,
+    "priceRange": null
+  },
+  "notes": [
+    "Search page items extracted: 0",
+    "No prices extracted — likely all listing pages blocked by anti-bot"
+  ],
+  "finishedAt": "2026-03-31T02:03:37.299Z"
+}

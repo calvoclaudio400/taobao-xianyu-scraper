@@ -1,0 +1,67 @@
+{
+  "keyword": "brave",
+  "searchUrl": "https://s.taobao.com/search?q=brave",
+  "startedAt": "2026-03-31T02:06:28.798Z",
+  "profile": "brave-default (persistent, logged-in)",
+  "captchaOrBlock": false,
+  "loginState": "logged-in",
+  "searchPageItems": [
+    {
+      "url": "https://detail.tmall.com/item.htm?id=990894933632&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000jx9aT0zdcNoRKe7gDSFtShabIxO_ivmQ6mo_6nBqmQo&skuId=6033530709796&priceTId=210149c017749228092963490e0cff&utparam=%7B%22aplus_abtest%22%3A%22c5599e3dee4512cae7537fbc81ff65d2%22%7D&spm=a21n57.1.item.2",
+      "salesText": "2000+人付款",
+      "priceText": "¥52000+人付款广东广州",
+      "titleText": "brave api搜索key自动发货绑卡激活search api网页搜索api key"
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=904546931762&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000boJRYSk1ho9ZMqRbDJDIeUuTW7yZt0ivdk8rnIbg5M0&skuId=5932428367289&priceTId=210149c017749228092963490e0cff&utparam=%7B%22aplus_abtest%22%3A%229b3e1922728ead753ab99564c25a845e%22%7D&spm=a21n57.1.item.3",
+      "salesText": "1000+人付款",
+      "priceText": "¥0.97券后价1000+人付款福建厦门",
+      "titleText": "brave api搜索key自动发货绑卡激活search api网页搜索api key"
+    }
+  ],
+  "listings": [
+    {
+      "url": "https://detail.tmall.com/item.htm?id=990894933632&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000jx9aT0zdcNoRKe7gDSFtShabIxO_ivmQ6mo_6nBqmQo&skuId=6033530709796&priceTId=210149c017749228092963490e0cff&utparam=%7B%22aplus_abtest%22%3A%22c5599e3dee4512cae7537fbc81ff65d2%22%7D&spm=a21n57.1.item.2",
+      "searchPageTitle": "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+      "searchPageSales": "2000+人付款",
+      "searchPagePrice": "¥52000+人付款广东广州",
+      "detailTitle": null,
+      "detailPriceTexts": [],
+      "priceNumbers": [],
+      "minPrice": null,
+      "maxPrice": null,
+      "variants": [],
+      "blocked": false,
+      "error": "page.evaluate: SyntaxError: Failed to execute 'querySelector' on 'Document': '#J/itemInfo h1' is not a valid selector.\n    at eval (eval at evaluate ("
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=904546931762&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000boJRYSk1ho9ZMqRbDJDIeUuTW7yZt0ivdk8rnIbg5M0&skuId=5932428367289&priceTId=210149c017749228092963490e0cff&utparam=%7B%22aplus_abtest%22%3A%229b3e1922728ead753ab99564c25a845e%22%7D&spm=a21n57.1.item.3",
+      "searchPageTitle": "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+      "searchPageSales": "1000+人付款",
+      "searchPagePrice": "¥0.97券后价1000+人付款福建厦门",
+      "detailTitle": null,
+      "detailPriceTexts": [],
+      "priceNumbers": [],
+      "minPrice": null,
+      "maxPrice": null,
+      "variants": [],
+      "blocked": false,
+      "error": "page.evaluate: SyntaxError: Failed to execute 'querySelector' on 'Document': '#J/itemInfo h1' is not a valid selector.\n    at eval (eval at evaluate ("
+    }
+  ],
+  "comparison": {
+    "totalUrlsFound": 2,
+    "totalVisited": 2,
+    "withPrices": 0,
+    "withVariants": 0,
+    "blockedCount": 0,
+    "globalMinPrice": null,
+    "globalMaxPrice": null,
+    "priceRange": null
+  },
+  "notes": [
+    "Search page URLs extracted: 2",
+    "No prices extracted — listing pages likely blocked by anti-bot"
+  ],
+  "finishedAt": "2026-03-31T02:07:37.490Z"
+}

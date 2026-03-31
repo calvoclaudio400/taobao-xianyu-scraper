@@ -1,0 +1,75 @@
+{
+  "keyword": "brave",
+  "searchUrl": "https://s.taobao.com/search?q=brave",
+  "startedAt": "2026-03-31T02:12:27.279Z",
+  "profile": "brave-default (persistent, logged-in)",
+  "captchaOrBlock": false,
+  "loginState": "logged-in",
+  "searchPageItems": [
+    {
+      "url": "https://detail.tmall.com/item.htm?id=990894933632&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000jx9aT0zdcNoRKe7gDSFtSvizesR35Uug2Gx3dymuh9A&skuId=6033530709796&priceTId=210127d617749231647955377e0d0c&utparam=%7B%22aplus_abtest%22%3A%2283d8df297dc4affc07d96195b69ef292%22%7D&spm=a21n57.1.item.2",
+      "salesText": "2000+人付款",
+      "priceText": "¥52000+人付款广东广州",
+      "titleText": "brave api搜索key自动发货绑卡激活search api网页搜索api key"
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=904546931762&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000boJRYSk1ho9ZMqRbDJDIeW5yg_HA1frwAxKOy8GxwO0&skuId=5932428367289&priceTId=210127d617749231647955377e0d0c&utparam=%7B%22aplus_abtest%22%3A%22622b8d1205ce39b386865f8b2b0671f7%22%7D&spm=a21n57.1.item.3",
+      "salesText": "1000+人付款",
+      "priceText": "¥0.97券后价1000+人付款福建厦门",
+      "titleText": "brave api搜索key自动发货绑卡激活search api网页搜索api key"
+    }
+  ],
+  "listings": [
+    {
+      "url": "https://detail.tmall.com/item.htm?id=990894933632&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000jx9aT0zdcNoRKe7gDSFtSvizesR35Uug2Gx3dymuh9A&skuId=6033530709796&priceTId=210127d617749231647955377e0d0c&utparam=%7B%22aplus_abtest%22%3A%2283d8df297dc4affc07d96195b69ef292%22%7D&spm=a21n57.1.item.2",
+      "searchPageTitle": "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+      "searchPageSales": "2000+人付款",
+      "searchPagePrice": "¥52000+人付款广东广州",
+      "detailTitle": "brave api搜索key自动发货绑卡激活search api网页搜索api key-tmall.com天猫",
+      "detailPriceTexts": [
+        "￥5"
+      ],
+      "priceNumbers": [
+        5
+      ],
+      "minPrice": 5,
+      "maxPrice": 5,
+      "variants": [],
+      "blocked": false,
+      "error": null
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=904546931762&ns=1&abbucket=16&xxc=taobaoSearch&mi_id=0000boJRYSk1ho9ZMqRbDJDIeW5yg_HA1frwAxKOy8GxwO0&skuId=5932428367289&priceTId=210127d617749231647955377e0d0c&utparam=%7B%22aplus_abtest%22%3A%22622b8d1205ce39b386865f8b2b0671f7%22%7D&spm=a21n57.1.item.3",
+      "searchPageTitle": "brave api搜索key自动发货绑卡激活search api网页搜索api key",
+      "searchPageSales": "1000+人付款",
+      "searchPagePrice": "¥0.97券后价1000+人付款福建厦门",
+      "detailTitle": "brave api搜索key自动发货绑卡激活search api网页搜索api key-淘宝网",
+      "detailPriceTexts": [
+        "券后￥0.97优惠前￥1"
+      ],
+      "priceNumbers": [
+        0.97,
+        1
+      ],
+      "minPrice": 0.97,
+      "maxPrice": 1,
+      "variants": [],
+      "blocked": false,
+      "error": null
+    }
+  ],
+  "comparison": {
+    "totalUrlsFound": 2,
+    "totalVisited": 2,
+    "withPrices": 2,
+    "withVariants": 0,
+    "blockedCount": 0,
+    "globalMinPrice": 0.97,
+    "globalMaxPrice": 5,
+    "priceRange": "¥0.97–¥5"
+  },
+  "notes": [
+    "Search page URLs extracted: 2"
+  ],
+  "finishedAt": "2026-03-31T02:13:52.409Z"
+}

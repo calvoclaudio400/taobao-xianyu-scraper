@@ -1,0 +1,33 @@
+{
+  "keyword": "brave",
+  "level": "listing-detail",
+  "ts": "2026-03-31T16:50:52.132Z",
+  "listings": [
+    {
+      "url": "https://detail.tmall.com/item.htm?id=990894933632",
+      "title": "按图片搜索",
+      "prices": [
+        "新品促销￥5起"
+      ],
+      "packageOptions": [
+        "中文(zh)",
+        "英文(en)"
+      ],
+      "salesHints": [],
+      "challenge": false
+    },
+    {
+      "url": "https://item.taobao.com/item.htm?id=904546931762",
+      "title": "按图片搜索",
+      "prices": [
+        "券后￥0.97起优惠前￥1起"
+      ],
+      "packageOptions": [
+        "中文(zh)",
+        "英文(en)"
+      ],
+      "salesHints": [],
+      "challenge": false
+    }
+  ]
+}
