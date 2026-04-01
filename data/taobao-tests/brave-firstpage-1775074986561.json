@@ -1,0 +1,19 @@
+{
+  "keyword": "brave",
+  "searchUrl": "https://s.taobao.com/search?q=brave",
+  "startedAt": "2026-04-01T20:21:24.358Z",
+  "listingCountFound": 0,
+  "listingCountVisited": 0,
+  "captchaOrBlockDetected": true,
+  "listings": [],
+  "comparison": {
+    "listingsWithPrices": 0,
+    "globalMinPrice": null,
+    "globalMaxPrice": null
+  },
+  "notes": [
+    "Taobao anti-bot/login challenge detected on search page.",
+    "Could not extract reliable prices from listing pages (likely anti-bot rendering/login gate)."
+  ],
+  "finishedAt": "2026-04-01T20:23:06.560Z"
+}

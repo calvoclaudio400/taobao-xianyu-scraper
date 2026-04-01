@@ -10,7 +10,7 @@ async function solve2Captcha(page) {
     const submitRes = await fetch(`https://2captcha.com/in.php`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: `key=${apiKey}&method=base64&body=${encodeURIComponent(screenshot)}&json=1`
+      body: `key=${apiKey}&method=base64&body=${screenshot}&json=1`
     });
     const submitData = await submitRes.json();
     
@@ -52,8 +52,7 @@ async function solveCapSolver(page) {
   const apiKey = process.env.CAPSOLVER_API_KEY || 'CAP-2589E729ED88F38704457D2188A0115447DADF4C160FDCC216E2A4C7D6CC54AE';
   
   try {
-    let screenshot = await page.screenshot({ encoding: 'base64' });
-    screenshot = screenshot.replace(/^data:image\/\w+;base64,/, '');
+    const screenshot = await page.screenshot({ encoding: 'base64' });
     
     const createRes = await fetch('https://api.capsolver.com/createTask', {
       method: 'POST',
