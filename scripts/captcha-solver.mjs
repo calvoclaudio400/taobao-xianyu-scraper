@@ -5,7 +5,8 @@ async function solve2Captcha(page) {
   const apiKey = process.env.TWOCAPTCHA_API_KEY || '62cc557ed2c55773b49bfbe2e6aa45ee';
   
   try {
-    const screenshot = await page.screenshot({ encoding: 'base64' });
+    const screenshotBuffer = await page.screenshot();
+    const screenshot = screenshotBuffer.toString('base64');
     
     const submitRes = await fetch(`https://2captcha.com/in.php`, {
       method: 'POST',
@@ -52,7 +53,8 @@ async function solveCapSolver(page) {
   const apiKey = process.env.CAPSOLVER_API_KEY || 'CAP-2589E729ED88F38704457D2188A0115447DADF4C160FDCC216E2A4C7D6CC54AE';
   
   try {
-    const screenshot = await page.screenshot({ encoding: 'base64' });
+    const screenshotBuffer = await page.screenshot();
+    const screenshot = screenshotBuffer.toString('base64');
     
     const createRes = await fetch('https://api.capsolver.com/createTask', {
       method: 'POST',
