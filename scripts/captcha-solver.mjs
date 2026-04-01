@@ -1,17 +1,58 @@
-// Captcha solver using CapSolver API
-// Set CAPSOLVER_API_KEY environment variable
+// Captcha solver with 2Captcha + CapSolver fallback
+// Priority: 2Captcha first, then CapSolver
 
-async function solveCaptcha(page, type = 'slider') {
-  const apiKey = process.env.CAPSOLVER_API_KEY;
-  if (!apiKey) {
-    console.warn('⚠️ CAPSOLVER_API_KEY not set, skipping captcha solve');
-    return false;
+async function solve2Captcha(page) {
+  const apiKey = process.env.TWOCAPTCHA_API_KEY || '62cc557ed2c55773b49bfbe2e6aa45ee';
+  
+  try {
+    const pageUrl = page.url();
+    const screenshot = await page.screenshot({ encoding: 'base64' });
+    
+    // Submit captcha
+    const submitRes = await fetch(`https://2captcha.com/in.php?key=${apiKey}&method=base64&body=${screenshot}&json=1`);
+    const submitData = await submitRes.json();
+    
+    if (submitData.status !== 1) {
+      console.error('❌ 2Captcha submit failed:', submitData.request);
+      return null;
+    }
+    
+    const captchaId = submitData.request;
+    console.log('🔄 2Captcha solving, ID:', captchaId);
+    
+    // Poll for result
+    for (let i = 0; i < 60; i++) {
+      await new Promise(r => setTimeout(r, 3000));
+      
+      const resultRes = await fetch(`https://2captcha.com/res.php?key=${apiKey}&action=get&id=${captchaId}&json=1`);
+      const resultData = await resultRes.json();
+      
+      if (resultData.status === 1) {
+        console.log('✅ 2Captcha solved:', resultData.request);
+        return resultData.request;
+      }
+      
+      if (resultData.request !== 'CAPCHA_NOT_READY') {
+        console.error('❌ 2Captcha failed:', resultData.request);
+        return null;
+      }
+    }
+    
+    console.warn('⏱️ 2Captcha timeout');
+    return null;
+  } catch (err) {
+    console.error('❌ 2Captcha error:', err.message);
+    return null;
   }
+}
 
+async function solveCapSolver(page) {
+  const apiKey = process.env.CAPSOLVER_API_KEY;
+  if (!apiKey) return null;
+  
   try {
     const pageUrl = page.url();
     
-    // Create task
     const createRes = await fetch('https://api.capsolver.com/createTask', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -30,14 +71,13 @@ async function solveCaptcha(page, type = 'slider') {
 
     const createData = await createRes.json();
     if (createData.errorId !== 0) {
-      console.error('❌ Captcha task creation failed:', createData.errorDescription);
-      return false;
+      console.error('❌ CapSolver failed:', createData.errorDescription);
+      return null;
     }
 
     const taskId = createData.taskId;
-    console.log('🔄 Solving captcha, task:', taskId);
+    console.log('🔄 CapSolver solving, task:', taskId);
 
-    // Poll for result
     for (let i = 0; i < 60; i++) {
       await new Promise(r => setTimeout(r, 2000));
       
@@ -50,29 +90,52 @@ async function solveCaptcha(page, type = 'slider') {
       const resultData = await resultRes.json();
       
       if (resultData.status === 'ready') {
-        console.log('✅ Captcha solved');
-        
-        // Inject solution
-        await page.evaluate((token) => {
-          const callback = window.turnstileCallback || window.captchaCallback;
-          if (callback) callback(token);
-        }, resultData.solution.token);
-        
-        return true;
+        console.log('✅ CapSolver solved');
+        return resultData.solution.token;
       }
       
       if (resultData.status === 'failed') {
-        console.error('❌ Captcha solve failed');
-        return false;
+        console.error('❌ CapSolver failed');
+        return null;
       }
     }
     
-    console.warn('⏱️ Captcha solve timeout');
-    return false;
+    console.warn('⏱️ CapSolver timeout');
+    return null;
   } catch (err) {
-    console.error('❌ Captcha solver error:', err.message);
-    return false;
+    console.error('❌ CapSolver error:', err.message);
+    return null;
   }
+}
+
+async function solveCaptcha(page) {
+  console.log('🔄 Attempting captcha solve...');
+  
+  // Try 2Captcha first
+  let solution = await solve2Captcha(page);
+  if (solution) {
+    await page.evaluate((text) => {
+      const input = document.querySelector('input[name="captcha"], input[type="text"]');
+      if (input) {
+        input.value = text;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+    }, solution);
+    return true;
+  }
+  
+  // Fallback to CapSolver
+  solution = await solveCapSolver(page);
+  if (solution) {
+    await page.evaluate((token) => {
+      const callback = window.turnstileCallback || window.captchaCallback;
+      if (callback) callback(token);
+    }, solution);
+    return true;
+  }
+  
+  console.warn('⚠️ All captcha solvers failed');
+  return false;
 }
 
 export { solveCaptcha };

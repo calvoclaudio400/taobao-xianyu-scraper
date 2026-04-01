@@ -1,12 +1,12 @@
 # Taobao/Xianyu Scraper
 
-Automated scraper with human-like behavior and captcha solving.
+Automated scraper with human-like behavior and dual captcha solving.
 
 ## Features
 - Realistic mouse movements with easing
 - Variable scroll patterns (up/down)
 - Random clicks and long pauses
-- Automatic captcha solving via CapSolver
+- Automatic captcha solving: 2Captcha (primary) + CapSolver (fallback)
 
 ## Setup
 
@@ -15,12 +15,11 @@ Automated scraper with human-like behavior and captcha solving.
 npm install playwright-core
 ```
 
-2. Set CapSolver API key (optional):
+2. API keys (2Captcha included, CapSolver optional):
 ```bash
-set CAPSOLVER_API_KEY=your_key_here
+set TWOCAPTCHA_API_KEY=62cc557ed2c55773b49bfbe2e6aa45ee
+set CAPSOLVER_API_KEY=your_capsolver_key_here
 ```
-
-Get API key: https://dashboard.capsolver.com/
 
 ## Usage
 
@@ -29,3 +28,4 @@ node scripts/taobao_brave_firstpage_test.mjs
 ```
 
 Results saved to `data/taobao-tests/`
+
