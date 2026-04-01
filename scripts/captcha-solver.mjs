@@ -47,11 +47,13 @@ async function solve2Captcha(page) {
 }
 
 async function solveCapSolver(page) {
-  const apiKey = process.env.CAPSOLVER_API_KEY;
-  if (!apiKey) return null;
+  const apiKey = process.env.CAPSOLVER_API_KEY || 'CAP-2589E729ED88F38704457D2188A0115447DADF4C160FDCC216E2A4C7D6CC54AE';
   
   try {
     const pageUrl = page.url();
+    
+    // Use cheapest task type: ImageToTextTask
+    const screenshot = await page.screenshot({ encoding: 'base64' });
     
     const createRes = await fetch('https://api.capsolver.com/createTask', {
       method: 'POST',
@@ -59,12 +61,8 @@ async function solveCapSolver(page) {
       body: JSON.stringify({
         clientKey: apiKey,
         task: {
-          type: 'AntiTurnstileTaskProxyLess',
-          websiteURL: pageUrl,
-          websiteKey: await page.evaluate(() => {
-            const el = document.querySelector('[data-sitekey]');
-            return el?.getAttribute('data-sitekey') || '';
-          })
+          type: 'ImageToTextTask',
+          body: screenshot
         }
       })
     });
@@ -76,7 +74,7 @@ async function solveCapSolver(page) {
     }
 
     const taskId = createData.taskId;
-    console.log('🔄 CapSolver solving, task:', taskId);
+    console.log('🔄 CapSolver solving (ImageToText), task:', taskId);
 
     for (let i = 0; i < 60; i++) {
       await new Promise(r => setTimeout(r, 2000));
@@ -91,7 +89,7 @@ async function solveCapSolver(page) {
       
       if (resultData.status === 'ready') {
         console.log('✅ CapSolver solved');
-        return resultData.solution.token;
+        return resultData.solution.text;
       }
       
       if (resultData.status === 'failed') {
@@ -127,9 +125,12 @@ async function solveCaptcha(page) {
   // Fallback to CapSolver
   solution = await solveCapSolver(page);
   if (solution) {
-    await page.evaluate((token) => {
-      const callback = window.turnstileCallback || window.captchaCallback;
-      if (callback) callback(token);
+    await page.evaluate((text) => {
+      const input = document.querySelector('input[name="captcha"], input[type="text"]');
+      if (input) {
+        input.value = text;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+      }
     }, solution);
     return true;
   }
