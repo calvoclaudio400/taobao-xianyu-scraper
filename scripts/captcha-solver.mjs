@@ -5,11 +5,13 @@ async function solve2Captcha(page) {
   const apiKey = process.env.TWOCAPTCHA_API_KEY || '62cc557ed2c55773b49bfbe2e6aa45ee';
   
   try {
-    const pageUrl = page.url();
     const screenshot = await page.screenshot({ encoding: 'base64' });
     
-    // Submit captcha
-    const submitRes = await fetch(`https://2captcha.com/in.php?key=${apiKey}&method=base64&body=${screenshot}&json=1`);
+    const submitRes = await fetch(`https://2captcha.com/in.php`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: `key=${apiKey}&method=base64&body=${encodeURIComponent(screenshot)}&json=1`
+    });
     const submitData = await submitRes.json();
     
     if (submitData.status !== 1) {
@@ -50,10 +52,8 @@ async function solveCapSolver(page) {
   const apiKey = process.env.CAPSOLVER_API_KEY || 'CAP-2589E729ED88F38704457D2188A0115447DADF4C160FDCC216E2A4C7D6CC54AE';
   
   try {
-    const pageUrl = page.url();
-    
-    // Use cheapest task type: ImageToTextTask
-    const screenshot = await page.screenshot({ encoding: 'base64' });
+    let screenshot = await page.screenshot({ encoding: 'base64' });
+    screenshot = screenshot.replace(/^data:image\/\w+;base64,/, '');
     
     const createRes = await fetch('https://api.capsolver.com/createTask', {
       method: 'POST',
