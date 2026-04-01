@@ -76,6 +76,32 @@ async function humanScroll(page, distance) {
   }
 }
 
+async function humanBrowsing(page) {
+  const actions = rand(2, 4);
+  
+  for (let i = 0; i < actions; i++) {
+    const action = Math.random();
+    
+    if (action < 0.3) {
+      await humanMouseMove(page, rand(200, 1200), rand(200, 800));
+      if (Math.random() < 0.5) {
+        await page.mouse.click(rand(300, 1000), rand(300, 700));
+      }
+      await humanDelay(800, 2500);
+    } else if (action < 0.6) {
+      await humanScroll(page, rand(200, 500));
+      await humanDelay(1000, 3000);
+    } else {
+      await page.mouse.wheel(0, -rand(100, 400));
+      await humanDelay(1200, 3500);
+    }
+    
+    if (Math.random() < 0.2) {
+      await humanDelay(10000, 25000);
+    }
+  }
+}
+
 async function run() {
   const browserPath = resolveBrowserPath();
   const launchOptions = {
@@ -109,8 +135,7 @@ async function run() {
     await page.goto(result.searchUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await humanDelay(4000, 9000);
 
-    await humanMouseMove(page, rand(300, 800), rand(200, 400));
-    await humanDelay(800, 1500);
+    await humanBrowsing(page);
 
     const pageText = cleanText(await page.textContent('body'));
     if (/验证码|captcha|登录|安全验证|异常流量/i.test(pageText)) {
@@ -157,8 +182,7 @@ async function run() {
         await p.goto(link, { waitUntil: 'domcontentloaded', timeout: 60000 });
         await humanDelay(8000, 22000);
 
-        await humanMouseMove(p, rand(400, 900), rand(300, 600));
-        await humanDelay(1500, 3500);
+        await humanBrowsing(p);
 
         const bodyText = cleanText(await p.textContent('body'));
         if (/验证码|captcha|登录|安全验证|异常流量/i.test(bodyText)) {
@@ -168,6 +192,11 @@ async function run() {
 
         await humanScroll(p, rand(300, 600));
         await humanDelay(2000, 4000);
+        
+        if (Math.random() < 0.4) {
+          await page.mouse.wheel(0, -rand(150, 350));
+          await humanDelay(1500, 3000);
+        }
 
         const data = await p.evaluate(() => {
           const text = (el) => (el?.textContent || '').replace(/\s+/g, ' ').trim();
