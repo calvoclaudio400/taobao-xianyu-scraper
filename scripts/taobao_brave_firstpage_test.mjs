@@ -39,6 +39,43 @@ function extractPriceNumbers(values = []) {
   return Array.from(new Set(out)).sort((a, b) => a - b);
 }
 
+function rand(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+async function humanDelay(minMs, maxMs) {
+  await new Promise(r => setTimeout(r, rand(minMs, maxMs)));
+}
+
+async function humanMouseMove(page, x, y) {
+  const steps = rand(8, 15);
+  const current = await page.evaluate(() => ({ x: window.innerWidth / 2, y: window.innerHeight / 2 }));
+  
+  for (let i = 0; i <= steps; i++) {
+    const progress = i / steps;
+    const eased = progress < 0.5 ? 2 * progress * progress : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+    const nx = current.x + (x - current.x) * eased;
+    const ny = current.y + (y - current.y) * eased;
+    await page.mouse.move(nx, ny);
+    await humanDelay(5, 15);
+  }
+}
+
+async function humanScroll(page, distance) {
+  const chunks = rand(3, 6);
+  const chunkSize = distance / chunks;
+  
+  for (let i = 0; i < chunks; i++) {
+    await page.mouse.wheel(0, chunkSize + rand(-50, 50));
+    await humanDelay(150, 400);
+  }
+  
+  if (Math.random() < 0.3) {
+    await page.mouse.wheel(0, -rand(50, 150));
+    await humanDelay(200, 500);
+  }
+}
+
 async function run() {
   const browserPath = resolveBrowserPath();
   const launchOptions = {
@@ -70,7 +107,10 @@ async function run() {
 
   try {
     await page.goto(result.searchUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
-    await page.waitForTimeout(7000);
+    await humanDelay(4000, 9000);
+
+    await humanMouseMove(page, rand(300, 800), rand(200, 400));
+    await humanDelay(800, 1500);
 
     const pageText = cleanText(await page.textContent('body'));
     if (/验证码|captcha|登录|安全验证|异常流量/i.test(pageText)) {
@@ -78,10 +118,17 @@ async function run() {
       result.notes.push('Taobao anti-bot/login challenge detected on search page.');
     }
 
-    // Gentle first-page scroll to load visible cards
-    for (let i = 0; i < 4; i += 1) {
-      await page.mouse.wheel(0, 550);
-      await page.waitForTimeout(1800 + Math.floor(Math.random() * 1200));
+    await humanDelay(2000, 5000);
+
+    const scrolls = rand(4, 7);
+    for (let i = 0; i < scrolls; i++) {
+      await humanScroll(page, rand(220, 780));
+      await humanDelay(1200, 4500);
+      
+      if (i % rand(3, 7) === 0) {
+        await humanMouseMove(page, rand(200, 1000), rand(300, 700));
+        await humanDelay(1500, 4000);
+      }
     }
 
     const links = await page.evaluate(() => {
@@ -108,13 +155,19 @@ async function run() {
 
       try {
         await p.goto(link, { waitUntil: 'domcontentloaded', timeout: 60000 });
-        await p.waitForTimeout(6000);
+        await humanDelay(8000, 22000);
+
+        await humanMouseMove(p, rand(400, 900), rand(300, 600));
+        await humanDelay(1500, 3500);
 
         const bodyText = cleanText(await p.textContent('body'));
         if (/验证码|captcha|登录|安全验证|异常流量/i.test(bodyText)) {
           result.captchaOrBlockDetected = true;
           row.planHints.push('blocked-or-login-required');
         }
+
+        await humanScroll(p, rand(300, 600));
+        await humanDelay(2000, 4000);
 
         const data = await p.evaluate(() => {
           const text = (el) => (el?.textContent || '').replace(/\s+/g, ' ').trim();
@@ -173,7 +226,7 @@ async function run() {
 
       result.listings.push(row);
       result.listingCountVisited += 1;
-      await page.waitForTimeout(1200 + Math.floor(Math.random() * 1600));
+      await humanDelay(3000, 9000);
     }
 
     const mins = result.listings.map((x) => x.minPrice).filter((x) => Number.isFinite(x));

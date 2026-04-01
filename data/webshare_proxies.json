@@ -1,0 +1,145 @@
+{
+  "proxies": [
+    {
+      "host": "45.56.183.201",
+      "port": 8523,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@45.56.183.201:8523"
+    },
+    {
+      "host": "62.164.242.108",
+      "port": 8685,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@62.164.242.108:8685"
+    },
+    {
+      "host": "9.142.10.93",
+      "port": 5749,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@9.142.10.93:5749"
+    },
+    {
+      "host": "193.160.80.218",
+      "port": 6486,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@193.160.80.218:6486"
+    },
+    {
+      "host": "216.98.254.60",
+      "port": 6370,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@216.98.254.60:6370"
+    },
+    {
+      "host": "208.66.76.38",
+      "port": 5962,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@208.66.76.38:5962"
+    },
+    {
+      "host": "45.56.137.203",
+      "port": 9268,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@45.56.137.203:9268"
+    },
+    {
+      "host": "72.46.138.204",
+      "port": 6430,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@72.46.138.204:6430"
+    },
+    {
+      "host": "72.1.154.184",
+      "port": 8075,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@72.1.154.184:8075"
+    },
+    {
+      "host": "9.142.22.186",
+      "port": 6843,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@9.142.22.186:6843"
+    },
+    {
+      "host": "9.142.22.54",
+      "port": 6711,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@9.142.22.54:6711"
+    },
+    {
+      "host": "45.56.179.206",
+      "port": 9410,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@45.56.179.206:9410"
+    },
+    {
+      "host": "192.46.189.83",
+      "port": 6076,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@192.46.189.83:6076"
+    },
+    {
+      "host": "130.180.232.245",
+      "port": 8683,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@130.180.232.245:8683"
+    },
+    {
+      "host": "72.1.136.62",
+      "port": 6953,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@72.1.136.62:6953"
+    },
+    {
+      "host": "69.91.142.103",
+      "port": 7595,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@69.91.142.103:7595"
+    },
+    {
+      "host": "130.180.231.237",
+      "port": 8379,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@130.180.231.237:8379"
+    },
+    {
+      "host": "138.226.71.77",
+      "port": 7267,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@138.226.71.77:7267"
+    },
+    {
+      "host": "199.187.189.252",
+      "port": 7043,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@199.187.189.252:7043"
+    },
+    {
+      "host": "9.142.40.215",
+      "port": 6885,
+      "username": "iaymvdsd",
+      "password": "rh28u9bysjmo",
+      "url": "http://iaymvdsd:rh28u9bysjmo@9.142.40.215:6885"
+    }
+  ],
+  "timestamp": 1775072972870
+}
