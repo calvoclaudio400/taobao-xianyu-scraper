@@ -1,6 +1,7 @@
 import { chromium } from 'playwright-core';
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import path from 'path';
+import { solveCaptcha } from './captcha-solver.mjs';
 
 const CANDIDATE_BROWSERS = [
   process.env.LOCAL_SCRAPER_CHROMIUM_PATH,
@@ -141,6 +142,13 @@ async function run() {
     if (/验证码|captcha|登录|安全验证|异常流量/i.test(pageText)) {
       result.captchaOrBlockDetected = true;
       result.notes.push('Taobao anti-bot/login challenge detected on search page.');
+      
+      console.log('🔄 Attempting to solve captcha...');
+      const solved = await solveCaptcha(page);
+      if (solved) {
+        await humanDelay(2000, 4000);
+        result.notes.push('Captcha solved successfully');
+      }
     }
 
     await humanDelay(2000, 5000);
@@ -188,6 +196,11 @@ async function run() {
         if (/验证码|captcha|登录|安全验证|异常流量/i.test(bodyText)) {
           result.captchaOrBlockDetected = true;
           row.planHints.push('blocked-or-login-required');
+          
+          const solved = await solveCaptcha(p);
+          if (solved) {
+            await humanDelay(2000, 4000);
+          }
         }
 
         await humanScroll(p, rand(300, 600));

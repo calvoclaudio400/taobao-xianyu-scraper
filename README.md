@@ -1,12 +1,31 @@
-﻿# Taobao Xianyu Scraper
+# Taobao/Xianyu Scraper
 
-Script-based browser scraper (Playwright) for Taobao/Xianyu testing and data extraction.
+Automated scraper with human-like behavior and captcha solving.
 
-## Included (initial)
-- `scripts/taobao_brave_firstpage_test.mjs`
-- `scripts/taobao_brave_firstpage_persistent_test.mjs`
+## Features
+- Realistic mouse movements with easing
+- Variable scroll patterns (up/down)
+- Random clicks and long pauses
+- Automatic captcha solving via CapSolver
 
-## Notes
-- Uses real browser automation (not a Chrome extension).
-- Persistent profile mode can reuse logged-in sessions.
-- Never commit cookies/session/private secrets.
+## Setup
+
+1. Install dependencies:
+```bash
+npm install playwright-core
+```
+
+2. Set CapSolver API key (optional):
+```bash
+set CAPSOLVER_API_KEY=your_key_here
+```
+
+Get API key: https://dashboard.capsolver.com/
+
+## Usage
+
+```bash
+node scripts/taobao_brave_firstpage_test.mjs
+```
+
+Results saved to `data/taobao-tests/`
