@@ -109,8 +109,8 @@ async function solveCapSolver(page) {
 async function solveCaptcha(page) {
   console.log('🔄 Attempting captcha solve...');
   
-  // Try 2Captcha first
-  let solution = await solve2Captcha(page);
+  // Try CapSolver first (cheaper)
+  let solution = await solveCapSolver(page);
   if (solution) {
     await page.evaluate((text) => {
       const input = document.querySelector('input[name="captcha"], input[type="text"]');
@@ -122,8 +122,8 @@ async function solveCaptcha(page) {
     return true;
   }
   
-  // Fallback to CapSolver
-  solution = await solveCapSolver(page);
+  // Fallback to 2Captcha
+  solution = await solve2Captcha(page);
   if (solution) {
     await page.evaluate((text) => {
       const input = document.querySelector('input[name="captcha"], input[type="text"]');
